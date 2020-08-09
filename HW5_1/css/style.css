@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+.icon {
+  background-color: #2a69a6;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
+section {
+  margin: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section h3,
+p {
+  margin-top: 30px;
+}
+.icon:hover {
+  background-color: white;
+  fill: #2a69ab;
+  border: 1px solid #2a69a6;
+}
+p {
+  color: #9d9d9d;
+}
