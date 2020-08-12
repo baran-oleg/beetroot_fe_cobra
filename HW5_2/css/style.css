@@ -92,3 +92,7 @@ label:active {
 div {
   background-color: red;
 }
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
