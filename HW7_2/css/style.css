@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e7ec;
+  width: 1600px;
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 90px 240px;
+}
+.content_first {
+  background-image: url(../img/red_car.png);
+  width: 740px;
+  height: 540px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding: 440px 256px 40px 44px;
+}
+.content_first > p {
+  color: white;
+  margin-bottom: 23px;
+}
+.content_first > h2 {
+  color: white;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+.content {
+  width: 360px;
+  height: 540px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.second_block {
+  margin-bottom: 20px;
+}
+.content > img {
+  margin-bottom: 28px;
+}
+#img_4 {
+  margin-bottom: 68px;
+}
+.content p,
+.content h2,
+.content span {
+  padding: 0 26px 0 28px;
+}
+.content p {
+  margin-bottom: 21px;
+  font-family: "Poppins", sans-serif;
+  color: #818181;
+}
+
+.content h2 {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+.bottom {
+  align-self: center;
+}
+.bottom > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #99a5b0;
+}
+.ri-loader-fill {
+  font-size: 20px;
+  margin-right: 10px;
+}
