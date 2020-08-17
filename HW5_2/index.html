@@ -13,39 +13,60 @@
         <h3>Let's go to the mall!</h3>
       </header>
       <section class="main-content">
-        <form class="list">
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span
-              >A lot of pickles
-              <span>(for the next lessons about CSS)</span></span
-            >
-          </label>
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span>10 apples <span>(for more CSS manipulations)</span></span>
-          </label>
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span>20 oranges <span>(because they are awesome)</span></span>
-          </label>
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span>13 plates <span>(hm... they always disappear)</span></span>
-          </label>
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span>15 bentos</span>
-          </label>
-          <label>
-            <input class="checkbox" type="checkbox" />
-            <span>1 bottle of Sake ^_^ <span>(for my friend)</span></span>
-          </label>
+        <form class="list" id="shopping_list">
+          <ul>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span
+                  >A lot of pickles
+                  <span>(for the next lessons about CSS)</span></span
+                >
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span>10 apples <span>(for more CSS manipulations)</span></span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span>20 oranges <span>(because they are awesome)</span></span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span
+                  >13 plates <span>(hm... they always disappear)</span></span
+                >
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span>15 bentos</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="checkbox" type="checkbox" />
+                <span>1 bottle of Sake ^_^ <span>(for my friend)</span></span>
+              </label>
+            </li>
+          </ul>
         </form>
+        <button
+          type="submit"
+          class="button"
+          form="shopping_list"
+          value="submit"
+        >
+          Bon appetit :)
+        </button>
       </section>
-      <footer class="footer">
-        <h2>Bot appetit :)</h2>
-      </footer>
     </main>
   </body>
 </html>
