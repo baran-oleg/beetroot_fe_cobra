@@ -9,6 +9,7 @@
 }
 .container {
   display: flex;
+  list-style: none;
 }
 .icon {
   background-color: #2a69a6;
@@ -19,8 +20,9 @@
   justify-content: center;
   align-items: center;
   fill: white;
+  margin-bottom: 30px;
 }
-section {
+li {
   margin: 20px;
   width: 30%;
   display: flex;
@@ -28,9 +30,8 @@ section {
   justify-content: center;
   align-items: center;
 }
-section h3,
-p {
-  margin-top: 30px;
+li h3 {
+  margin-bottom: 30px;
 }
 .icon:hover {
   background-color: white;
