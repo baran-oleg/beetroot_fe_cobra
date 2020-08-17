@@ -51,6 +51,7 @@
   font-weight: 400;
 }
 .content {
+  list-style: none;
   display: flex;
   justify-content: space-around;
 }
