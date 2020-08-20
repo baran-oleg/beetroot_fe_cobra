@@ -1,0 +1,19 @@
+// colors
+$background: #e3e8ed;
+$date_color: #818181;
+$bottom_text: #99a5b0;
+$firs_title: #ffffff;
+$title: #1d1d1d;
+$cars_bg: white;
+
+// fonts
+@font-face {
+  font-family: "HansKendrick";
+  src: url("../assets/fonts/HansKendrick-Regular.otf");
+}
+$main_font: "HansKendrick";
+
+// font-sizes
+$main_title: 30px;
+$title: 22px;
+$text: 13px;
