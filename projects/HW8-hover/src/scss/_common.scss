@@ -19,12 +19,15 @@ body {
     font-size: $title_size;
     color: $main_title_color;
     margin-bottom: 64px;
+    text-transform: uppercase;
   }
-  & p {
+  & .main_text {
     font-family: $main_font;
     font-size: $text_size;
     color: $text_color;
+    padding: 0 306px;
     margin-bottom: 58px;
+    text-align: center;
   }
 }
 .container {
@@ -37,10 +40,11 @@ body {
     position: relative;
     width: 100%;
     max-width: 270px;
-    & img {
+    & .image {
       display: block;
       width: 100%;
-      height: auto;
+      height: 270px;
+      margin-bottom: 21px;
     }
     & .overlay {
       position: absolute;
@@ -53,9 +57,23 @@ body {
       opacity: 0;
       transition: 0.3s ease;
       background-color: $hover_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
     }
     &:hover .overlay {
       opacity: 1;
+    }
+    & h4 {
+      font-family: $main_font;
+      font-size: $card_title_size;
+      color: $card_title_color;
+    }
+    & .card_text {
+      font-family: $main_font;
+      font-size: $card_text_size;
+      color: $card_text_color;
     }
   }
 }
