@@ -32,6 +32,7 @@ body {
 }
 .card > img {
   padding: 20px;
+  opacity: 0.6;
 }
 .card .orange {
   width: 135px;
@@ -71,5 +72,5 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1, 1.1);
 }
