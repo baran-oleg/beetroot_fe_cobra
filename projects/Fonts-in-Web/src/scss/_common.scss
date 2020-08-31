@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+.container {
+  background-color: $main_color;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 120px 100px;
+}
+.wrapper {
+  width: 1400px;
+  box-shadow: 0 4px 68px rgba(0, 0, 0, 0.1);
+  padding: 140px 138px 147px 121px;
+  &__title {
+    font-family: $title_font;
+    font-size: $title_size;
+    font-weight: 400;
+    margin-bottom: 39px;
+  }
+  & .first::first-letter {
+    font-family: $title_font;
+    font-size: $first_letter;
+    font-weight: 400;
+    float: left;
+    margin: 30px 30px 6px 0;
+    opacity: 1;
+  }
+  &__text {
+    font-family: $main_font;
+    font-size: $main_text_size;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 40px;
+    opacity: 0.7;
+    &:nth-child(4) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__blockquote {
+    font-family: $main_font;
+    font-size: $blockquote_size;
+    font-style: italic;
+    margin-bottom: 39px;
+    &::before {
+      content: "“";
+      content: open-quote;
+      font-size: $quotes_size;
+      margin-right: 20px;
+    }
+  }
+  &__button {
+    width: 264px;
+    height: 68px;
+    border: 2px solid $button_color;
+    background-color: $main_color;
+    color: $button_color;
+    font-family: $main_font;
+    font-size: $main_text_size;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      background-color: $button_color;
+      color: $main_color;
+      cursor: pointer;
+    }
+  }
+}
