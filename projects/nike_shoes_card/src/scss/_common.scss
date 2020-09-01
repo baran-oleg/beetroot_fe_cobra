@@ -40,6 +40,90 @@
       border-radius: 10px;
       background-color: $card_background_color;
       z-index: 3;
+      display: flex;
+      flex-direction: column;
+    }
+    &__card-logo {
+      padding: 24px 0 0 21px;
+      display: block;
+    }
+    &__card-content {
+      display: flex;
+      gap: 70px;
+    }
+    &__content-img {
+      padding: 69px 0 0 36px;
+    }
+
+    &__content-options {
+      padding-right: 56px;
+      & h1 {
+        font-family: $main_font;
+        font-size: $title_size;
+        color: $card_title_color;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+      & h3 {
+        font-family: $main_font;
+        font-size: $subtitle_size;
+        color: $card_title_color;
+        font-weight: 400;
+        opacity: 0.5;
+        margin-bottom: 20px;
+      }
+      & svg {
+        margin-bottom: 20px;
+      }
+      & .button {
+        width: 184px;
+        height: 40px;
+        border: 1px solid $card_button_border_color;
+        background-color: $card_select_background_color;
+        font-family: $main_font;
+        font-size: $button_size;
+        color: $card_button_color;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.26;
+          background-color: $card_button_background_color;
+        }
+      }
+    }
+    &__select {
+      margin-bottom: 29px;
+    }
+    &__select #size {
+      position: relative;
+      font-family: $main_font;
+      font-size: $select_size;
+      color: $card_select_color;
+      width: 69px;
+      height: 32px;
+      border: 1px solid $card_select_border_color;
+      background-color: $card_select_background_color;
+      padding-left: 14px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.26;
+        background-color: $card_button_background_color;
+      }
+    }
+    &__select #qty {
+      position: relative;
+      font-family: $main_font;
+      font-size: $select_size;
+      color: $card_select_color;
+      width: 69px;
+      height: 32px;
+      border: 1px solid $card_select_border_color;
+      background-color: $card_select_background_color;
+      padding-left: 14px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.26;
+        background-color: $card_button_background_color;
+      }
     }
   }
 }
