@@ -60,18 +60,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      background: black;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: 0;
+      opacity: 0.3;
+    }
     & div {
       padding: 0 256px 40px 43px;
-    }
-    & h1 {
-      color: $firs_title;
-      font-size: $main_title;
-    }
-    & p {
-      color: $firs_title;
-      font-size: $text;
-      margin-bottom: 20px;
+      z-index: 2;
+
+      & h1 {
+        color: $firs_title;
+        font-size: $main_title;
+      }
+      & p {
+        color: $firs_title;
+        font-size: $text;
+        margin-bottom: 20px;
+        opacity: 0.6;
+      }
     }
   }
   & .content:nth-child(4) > img {
