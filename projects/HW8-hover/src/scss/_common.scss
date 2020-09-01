@@ -20,6 +20,17 @@ body {
     color: $main_title_color;
     margin-bottom: 64px;
     text-transform: uppercase;
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 5px;
+      background-color: $line_color;
+      position: absolute;
+      bottom: -19px;
+      left: 43%;
+    }
   }
   & .main_text {
     font-family: $main_font;
@@ -62,6 +73,13 @@ body {
         justify-content: center;
         align-items: center;
         align-content: center;
+        & a {
+          background-color: #5ecbe7;
+          margin-right: 3px;
+        }
+        &:nth-child(3) {
+          margin-right: 0;
+        }
       }
       &:hover .overlay {
         opacity: 1;
