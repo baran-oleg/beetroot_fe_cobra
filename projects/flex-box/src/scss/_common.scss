@@ -31,8 +31,27 @@ body {
     background-color: $cars_bg;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-basis: 360px;
-    max-height: 540px;
+    min-height: 540px;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.37);
+    &:hover {
+      box-shadow: 0 9px 9px rgba(149, 29, 29, 0.92);
+    }
+    &.wrapper {
+      position: relative;
+
+      &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
     &__text {
       padding: 30px 30px 0;
     }
@@ -53,15 +72,22 @@ body {
   }
   & .first_block {
     flex-basis: 740px;
-    background-image: url("../img/red_car.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    &__img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
     &::after {
       content: "";
       background: black;
@@ -89,7 +115,7 @@ body {
       }
     }
   }
-  & .content:nth-child(4) > img {
+  & .content:nth-child(4) > .wrapper {
     margin-bottom: 26px;
   }
 }
@@ -101,7 +127,7 @@ body {
   font-size: $bottom_text;
 }
 .loader {
-  color: #911d1d;
+  color: rgb(145, 29, 29);
   font-size: 10px;
   margin: 0 50px;
   width: 1em;
