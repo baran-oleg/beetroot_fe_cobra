@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Miso";
+  src: url(../fonts/miso-bold.ttf);
+}
+@font-face {
+  font-family: "Miso-light";
+  src: url(../fonts/miso-light.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,68 +17,58 @@
 }
 body {
   background-color: #fdde7e;
+  display: flex;
+  justify-content: center;
 }
 .main {
-  padding: 50px;
+  width: 1200px;
+  height: 600px;
+  padding: 80px 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 .card {
   background-color: #ffffff;
   width: 360px;
-  height: 441px;
+  min-height: 441px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  padding-top: 26px;
+  box-shadow: 0 31px 30px rgba(0, 0, 0, 0.34);
 }
 .card h1 {
-  font-family: "Baloo Tamma 2", cursive;
-  font-size: 50px;
+  font-family: Miso;
+  font-size: 70px;
   color: #02995b;
+  margin-bottom: 11px;
+  letter-spacing: -1.25px;
 }
-.card > img {
-  padding: 20px;
-  opacity: 0.6;
-}
-.card .orange {
+.card img {
+  padding-left: 10px;
+  margin-bottom: 24px;
   width: 135px;
-  height: 77px;
-  background-image: url(../img/cup_1.png);
-  background-repeat: no-repeat;
+  height: 134px;
 }
-.card .yellow {
-  width: 135px;
-  height: 77px;
-  background-image: url(../img/cup_2.png);
-  background-repeat: no-repeat;
-}
-.card .gray {
-  width: 135px;
-  height: 77px;
-  background-image: url(../img/cup_3.png);
-  background-repeat: no-repeat;
-}
-.orange,
-.yellow,
-.gray {
-  margin-bottom: 25px;
-}
-.card div img {
-  padding: 15px 57px 17px 42px;
-  opacity: 0.3;
-}
+
 .card h2 {
-  font-family: "Lato", sans-serif;
-  margin-bottom: 20px;
+  font-family: "Miso-light";
+  margin-bottom: 18px;
+  font-size: 56px;
+  letter-spacing: 0.09px;
 }
 .card p {
-  width: 135px;
   text-align: center;
   font-family: "Lato", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 21px;
 }
 
 .card:hover {
-  transform: scale(1, 1.1);
+  transform: scaleY(1.14);
+  padding-top: 29px;
+  transition: all 0.4s ease;
 }
