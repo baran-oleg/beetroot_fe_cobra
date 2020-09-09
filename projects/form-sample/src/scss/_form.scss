@@ -1,0 +1,55 @@
+$style: "form";
+.#{$style} {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  &__username,
+  &__password {
+    font-family: $main_font;
+    font-size: $laben_size;
+    font-weight: 700;
+    color: $laben_color;
+    margin-bottom: 10px;
+  }
+  &__username-input,
+  &__password-input {
+    height: 42px;
+    width: 260px;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    background: transparent;
+    &:hover {
+      border: 2px solid $bt_color;
+    }
+    &:focus {
+      font-family: $main_font;
+      color: $activ_link_color;
+      font-weight: 700;
+    }
+    &:valid {
+      font-family: $main_font;
+      color: $unactiv_link_color;
+      font-weight: 700;
+    }
+    &:invalid {
+      font-family: $main_font;
+      color: red;
+    }
+  }
+  &__error {
+    visibility: hidden;
+  }
+  &__username-input:invalid + &__error {
+    visibility: visible;
+    color: red;
+  }
+  &__password-input:invalid + &__error {
+    visibility: visible;
+    color: red;
+  }
+  &__error--first {
+    margin-bottom: 3px;
+  }
+  &__error--second {
+    margin-bottom: 6px;
+  }
+}

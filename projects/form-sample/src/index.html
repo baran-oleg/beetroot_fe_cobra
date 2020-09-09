@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Form Sample</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/fav/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__wrapper">
+        <nav class="navigation">
+          <a href="#" class="navigation__link navigation__link--first"
+            >Sing in</a
+          >
+          <a href="#" class="navigation__link"> Join us </a>
+        </nav>
+        <form class="form" id="registration">
+          <label for="" class="form__username" for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="form__username-input"
+            form="registration"
+            pattern="[A-Za-z]{3,13}_[A-Za-z]{3,13}"
+          />
+          <span class="form__error form__error--first">Invalid username </span>
+          <label for="" class="form__password" for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form__password-input form__password-input--invalid"
+            form="registration"
+            pattern="[A-Za-z]{6,10}"
+          />
+          <span class="form__error form__error--second">Invalid password</span>
+          <input type="checkbox" name="" id="" />
+          <button class="form__button">Sing</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

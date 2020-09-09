@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 800px;
+  min-height: 600px;
+  background-color: $background_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container {
+  width: 400px;
+  height: 500px;
+  background-image: linear-gradient(32deg, #3023ae 0%, #c86dd7 100%);
+  box-shadow: 0 63px 71px rgba(0, 0, 0, 0.39);
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/bridge.png);
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  &__wrapper {
+    padding: 53px 69px 59px 70px;
+    position: absolute;
+  }
+}
