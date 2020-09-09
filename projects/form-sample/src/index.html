@@ -30,7 +30,7 @@
             pattern="[A-Za-z]{3,13}_[A-Za-z]{3,13}"
           />
           <span class="form__error form__error--first">Invalid username </span>
-          <label for="" class="form__password" for="password">Password</label>
+          <label class="form__password" for="password">Password</label>
           <input
             type="password"
             id="password"
@@ -39,7 +39,10 @@
             pattern="[A-Za-z]{6,10}"
           />
           <span class="form__error form__error--second">Invalid password</span>
-          <input type="checkbox" name="" id="" />
+          <lable class="form__checkbox">
+            <input type="checkbox" class="form__checkbox--checkbox" />
+            Keep me signed in
+          </lable>
           <button class="form__button">Sing</button>
         </form>
       </div>

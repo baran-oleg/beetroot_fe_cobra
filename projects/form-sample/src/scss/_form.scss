@@ -52,4 +52,17 @@ $style: "form";
   &__error--second {
     margin-bottom: 6px;
   }
+  &__checkbox {
+    font-family: $main_font;
+    font-size: $checkbox_size;
+    font-weight: 700;
+    color: $laben_color;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+    &--checkbox {
+      margin-right: 5px;
+    }
+  }
 }
