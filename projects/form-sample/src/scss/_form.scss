@@ -2,7 +2,7 @@ $style: "form";
 .#{$style} {
   display: flex;
   flex-direction: column;
-  position: static;
+  // position: static;
   &__username,
   &__password {
     font-family: $main_font;
@@ -52,17 +52,73 @@ $style: "form";
   &__error--second {
     margin-bottom: 6px;
   }
-  &__checkbox {
+  &__style-checkbox-container {
+    margin-bottom: 41px;
+  }
+  &__style-checkbox {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+    & + label:before {
+      content: "";
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 16px;
+      height: 16px;
+      background: white;
+    }
+    &:hover + label:before {
+      background: $bt_color;
+    }
+
+    &:checked + label:before {
+      background: $bt_color;
+    }
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+    &:checked + label:after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 7px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white,
+        4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+  &__style-checkbox-label {
     font-family: $main_font;
     font-size: $checkbox_size;
     font-weight: 700;
     color: $laben_color;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 40px;
-    &--checkbox {
-      margin-right: 5px;
+  }
+  &__button {
+    display: block;
+    width: 261px;
+    height: 42px;
+    background-color: $bt_color;
+    font-family: $main_font;
+    font-size: $bt_size;
+    font-weight: 700;
+    color: $activ_link_color;
+    margin-bottom: 33px;
+    &:hover {
+      background-color: $text_decoration_color;
+      transition: 0.2s ease;
     }
   }
 }

@@ -20,6 +20,7 @@
           >
           <a href="#" class="navigation__link"> Join us </a>
         </nav>
+
         <form class="form" id="registration">
           <label for="" class="form__username" for="username">Username</label>
           <input
@@ -39,12 +40,24 @@
             pattern="[A-Za-z]{6,10}"
           />
           <span class="form__error form__error--second">Invalid password</span>
-          <lable class="form__checkbox">
-            <input type="checkbox" class="form__checkbox--checkbox" />
-            Keep me signed in
-          </lable>
-          <button class="form__button">Sing</button>
+
+          <div class="form__style-checkbox-container">
+            <input
+              type="checkbox"
+              class="form__style-checkbox"
+              id="checkbox-singed-in"
+            />
+            <label for="checkbox-singed-in" class="form__style-checkbox-label"
+              >Keep me singed in</label
+            >
+          </div>
+
+          <button class="form__button">Sing in</button>
         </form>
+        <nav class="bottom-navigation">
+          <a href="#" class="bottom-navigation__link">Forgot password</a>
+          <a href="#" class="bottom-navigation__link">Create an account</a>
+        </nav>
       </div>
     </div>
     <script src="js/bundle.js"></script>

@@ -1,0 +1,15 @@
+$style: "bottom-navigation";
+.#{$style} {
+  display: flex;
+  justify-content: space-between;
+  &__link {
+    color: $bottom_link_color;
+    font-family: $main_font;
+    font-size: $bottom_link_size;
+    font-weight: 400;
+    &:hover {
+      text-decoration-color: $text_decoration_color;
+      color: $activ_link_color;
+    }
+  }
+}
