@@ -13,61 +13,66 @@
   </head>
   <body>
     <header class="header">
-      <svg class="header__svg-logo" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <clipPath id="m0s9a">
-            <path fill="#fff" d="M63.675 67.857L34.86 12.86 6.046 67.857z" />
-          </clipPath>
-          <clipPath id="m0s9b">
-            <path
-              fill="#fff"
-              d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
-            />
-          </clipPath>
-        </defs>
+      <a href="/">
+        <svg class="header__svg-logo" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="m0s9a">
+              <path fill="#fff" d="M63.675 67.857L34.86 12.86 6.046 67.857z" />
+            </clipPath>
+            <clipPath id="m0s9b">
+              <path
+                fill="#fff"
+                d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
+              />
+            </clipPath>
+          </defs>
 
-        <path
-          fill="none"
-          stroke="#fff"
-          stroke-miterlimit="20"
-          stroke-width="4"
-          d="M63.675 67.857v0L34.86 12.86v0L6.046 67.857v0z"
-          clip-path='url("#m0s9a")'
-        />
+          <path
+            fill="none"
+            stroke="#fff"
+            stroke-miterlimit="20"
+            stroke-width="4"
+            d="M63.675 67.857v0L34.86 12.86v0L6.046 67.857v0z"
+            clip-path='url("#m0s9a")'
+          />
 
-        <path
-          fill="none"
-          stroke="#f6f7fc"
-          stroke-miterlimit="20"
-          stroke-width="4"
-          d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
-          clip-path='url("#m0s9b")'
-        />
+          <path
+            fill="none"
+            stroke="#f6f7fc"
+            stroke-miterlimit="20"
+            stroke-width="4"
+            d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
+            clip-path='url("#m0s9b")'
+          />
 
-        <path
-          fill="#fff"
-          d="M34.86 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.612 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-        />
+          <path
+            fill="#fff"
+            d="M34.86 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.612 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
+          />
 
-        <path
-          fill="#fff"
-          d="M61.516 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-        />
+          <path
+            fill="#fff"
+            d="M61.516 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
+          />
 
-        <path
-          fill="#fff"
-          d="M6.043 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-        />
-      </svg>
+          <path
+            fill="#fff"
+            d="M6.043 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
+          />
+        </svg>
+      </a>
       <h1 class="header__title">
-        Working<br />
+        <span class="header__title-span">Working</span>
         with design lab
       </h1>
       <p class="header__text">
         We’ve been helping startups launch and grow their businesses. We help
         you to fill the gap between development, design and product management.
       </p>
-      <svg class="header__svg-scroll" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        class="header__svg-scroll header__svg-scroll--animation"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fill="#fff"
           d="M13.154 11.416a1.66 1.66 0 0 1-1.657 1.659 1.66 1.66 0 0 1 0-3.318 1.66 1.66 0 0 1 1.657 1.66zM12.45-.007c5.932.479 10.545 5.451 10.545 11.423V25.49c0 6.347-5.158 11.511-11.5 11.511C5.157 37.001 0 31.837 0 25.491V11.415C-.001 5.44 4.612.468 10.543-.007zm8.637 25.497V11.416c0-5.295-4.303-9.601-9.591-9.601-5.289 0-9.59 4.306-9.59 9.6V25.49c0 5.295 4.302 9.601 9.59 9.601s9.59-4.306 9.59-9.601z"
@@ -75,28 +80,47 @@
       </svg>
     </header>
 
-    <div class="main">
+    <main class="main">
       <section class="main__about_us">
         <h2 class="main__about_us-title">About us</h2>
         <p class="main__about_us-text">
           When you work with us, you are part of a team of committed
-          collaborators. All aspects of our software development process are
-          integrated, iterative and agile.
+          collaborators.<span>
+            All aspects of our software development process are integrated,
+            iterative and</span
+          >
+          agile.
         </p>
-        <p>
-          Our approach unifies design, development and product management to
-          create exceptional products. We start each project by understanding
-          your business goals, the user’s needs and the product requirements.
+        <p class="main__about_us-text">
+          Our approach unifies design, development and
+          <span>product management to create exceptional products.</span>
+          <span
+            >We start each project by understanding your business goals,</span
+          >
+          <span>the user’s needs and the product requirements.</span>
           Then we help translate them into effective and elegant solutions.
         </p>
       </section>
 
-      <section class="main__services"></section>
+      <section class="main__services">
+        <div class="main__services_container">
+          <h2 class="main__services_container-title">Services</h2>
+          <p class="main__services_container-text">
+            Before we sign a contract or write a line of code our team will
+            spend the necessary
+            <span>time needed to understand your product vision.</span>
+            The outcome of this scoping session is a proposal or high-level
+            statement of <span>work.</span> Based on your requirements, we can
+            provide a complete offering or just the
+            <span>pieces you need.</span>
+          </p>
+        </div>
+      </section>
 
       <section class="main__what_we_do"></section>
 
       <section class="main__gallery"></section>
-    </div>
+    </main>
 
     <script src="js/bundle.js"></script>
   </body>

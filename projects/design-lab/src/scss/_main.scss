@@ -1,3 +1,128 @@
 $style: "main";
 .#{$style} {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__about_us {
+    width: 902px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 3px solid $dark_color;
+    border-top: none;
+    margin-bottom: 188px;
+    padding-top: 77px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 297px;
+      height: 2px;
+      background-color: $dark_color;
+      position: absolute;
+      top: 0;
+      left: 1px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 297px;
+      height: 2px;
+      background-color: $dark_color;
+      position: absolute;
+      top: 0;
+      right: 1px;
+    }
+    &-title {
+      position: absolute;
+      top: -17px;
+      font-family: $main_font;
+      font-size: $sections_title_size;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 8.95px;
+      color: $dark_color;
+      //   margin-bottom: 65px;
+    }
+    &-text {
+      font-family: $main_font;
+      font-size: $about_text_size;
+      font-weight: 300;
+      line-height: 24px;
+      color: $dark_color;
+      text-align: center;
+      margin-bottom: 30px;
+      & span {
+        display: block;
+      }
+    }
+  }
+  &__services {
+    width: 100%;
+    height: 488px;
+    background-image: url(../img/services.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_container {
+      width: 908px;
+      border: 3px solid $light_color;
+      position: relative;
+      padding-top: 65px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top: none;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 297px;
+        height: 3px;
+        background-color: $light_color;
+        position: absolute;
+        top: 0;
+        left: 1px;
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 297px;
+        height: 3px;
+        background-color: $light_color;
+        position: absolute;
+        top: 0;
+        right: 1px;
+      }
+
+      &-title {
+        font-family: $main_font;
+        font-size: $sections_title_size;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 8.95px;
+        color: $light_color;
+        position: absolute;
+        top: -21px;
+      }
+      &-text {
+        font-family: $main_font;
+        font-size: $about_text_size;
+        font-weight: 300;
+        line-height: 24px;
+        color: $light_color;
+        text-align: center;
+        margin-bottom: 30px;
+        & span {
+          display: block;
+        }
+      }
+    }
+  }
 }
