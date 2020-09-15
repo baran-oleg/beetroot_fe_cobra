@@ -1,0 +1,93 @@
+$style: "footer";
+.#{$style} {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 902px;
+    border: 2px solid $dark_color;
+    padding-top: 59px;
+    position: relative;
+    border-top: none;
+    margin-bottom: 63px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 270px;
+      height: 2px;
+      background-color: $dark_color;
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 270px;
+      height: 2px;
+      background-color: $dark_color;
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+    &-title {
+      font-family: $main_font;
+      font-size: $last_title_size;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4, 76px;
+      color: $dark_color;
+      position: absolute;
+      top: -21px;
+    }
+    &-text {
+      font-family: $main_font;
+      font-size: $contact_text_size;
+      font-weight: 300;
+      line-height: 25.89px;
+      color: $dark_color;
+      text-align: center;
+      margin-bottom: 42px;
+      & span {
+        display: block;
+      }
+    }
+    &-button {
+      width: 395px;
+      height: 58px;
+      font-family: $main_font;
+      font-size: $bt_text_size;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2.54px;
+      color: $light_color;
+      background-color: $dark_color;
+      border: 2px solid $dark_color;
+      margin-bottom: 50px;
+      &:hover {
+        border: 2px solid $dark_color;
+        color: $dark_color;
+        background-color: $light_color;
+      }
+    }
+  }
+  &__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &-img {
+      margin-right: 36px;
+    }
+    &-text {
+      font-family: $main_font;
+      font-size: $footer_text_size;
+      font-weight: 400;
+      color: $dark_color;
+    }
+  }
+}

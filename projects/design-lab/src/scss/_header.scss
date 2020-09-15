@@ -46,5 +46,9 @@ $style: "header";
   &__svg-scroll {
     width: 23px;
     height: 37px;
+    fill: #ffffff;
+    &:hover {
+      fill: $dark_color;
+    }
   }
 }
