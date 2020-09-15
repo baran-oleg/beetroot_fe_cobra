@@ -13,69 +13,34 @@
   </head>
   <body>
     <header class="header">
-      <a href="/">
-        <svg class="header__svg-logo" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="m0s9a">
-              <path fill="#fff" d="M63.675 67.857L34.86 12.86 6.046 67.857z" />
-            </clipPath>
-            <clipPath id="m0s9b">
-              <path
-                fill="#fff"
-                d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
-              />
-            </clipPath>
-          </defs>
-
-          <path
-            fill="none"
-            stroke="#fff"
-            stroke-miterlimit="20"
-            stroke-width="4"
-            d="M63.675 67.857v0L34.86 12.86v0L6.046 67.857v0z"
-            clip-path='url("#m0s9a")'
-          />
-
-          <path
-            fill="none"
-            stroke="#f6f7fc"
-            stroke-miterlimit="20"
-            stroke-width="4"
-            d="M34.5 0C53.002 0 68 14.87 68 33.214S53.002 66.43 34.5 66.43C15.998 66.429 1 51.558 1 33.214S15.998 0 34.5 0z"
-            clip-path='url("#m0s9b")'
-          />
-
-          <path
-            fill="#fff"
-            d="M34.86 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.612 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-          />
-
-          <path
-            fill="#fff"
-            d="M61.516 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-          />
-
-          <path
-            fill="#fff"
-            d="M6.043 62.857c1.99 0 3.602 1.599 3.602 3.572 0 1.972-1.613 3.57-3.602 3.57-1.99 0-3.602-1.598-3.602-3.57 0-1.973 1.613-3.572 3.602-3.572z"
-          />
-        </svg>
-      </a>
-      <h1 class="header__title">
-        <span class="header__title-span">Working</span>
-        with design lab
-      </h1>
-      <p class="header__text">
-        We’ve been helping startups launch and grow their businesses. We help
-        you to fill the gap between development, design and product management.
-      </p>
-      <a href="#mainSection">
-        <svg class="header__svg-scroll" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.154 11.416a1.66 1.66 0 0 1-1.657 1.659 1.66 1.66 0 0 1 0-3.318 1.66 1.66 0 0 1 1.657 1.66zM12.45-.007c5.932.479 10.545 5.451 10.545 11.423V25.49c0 6.347-5.158 11.511-11.5 11.511C5.157 37.001 0 31.837 0 25.491V11.415C-.001 5.44 4.612.468 10.543-.007zm8.637 25.497V11.416c0-5.295-4.303-9.601-9.591-9.601-5.289 0-9.59 4.306-9.59 9.6V25.49c0 5.295 4.302 9.601 9.59 9.601s9.59-4.306 9.59-9.601z"
-          />
-        </svg>
-      </a>
+      <div class="header__container">
+        <a href="/" class="header__container-logo">
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <h1 class="header__container-title">
+          <span class="header__container-title-span">Working</span>
+          with design lab
+        </h1>
+        <p class="header__container-text">
+          We’ve been helping startups launch and grow their businesses. We help
+          you to fill the gap between development, design and product
+          management.
+        </p>
+        <a href="#mainSection" class="header__container-scroll">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="36"
+            height="36"
+            class="header__container-scroll-svg"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M11.141 4c-1.582 0-2.387.169-3.128.565a3.453 3.453 0 0 0-1.448 1.448C6.169 6.753 6 7.559 6 9.14v5.718c0 1.582.169 2.387.565 3.128.337.63.818 1.111 1.448 1.448.74.396 1.546.565 3.128.565h1.718c1.582 0 2.387-.169 3.128-.565a3.453 3.453 0 0 0 1.448-1.448c.396-.74.565-1.546.565-3.128V9.14c0-1.582-.169-2.387-.565-3.128a3.453 3.453 0 0 0-1.448-1.448C15.247 4.169 14.441 4 12.86 4H11.14zm0-2h1.718c2.014 0 3.094.278 4.072.801a5.452 5.452 0 0 1 2.268 2.268c.523.978.801 2.058.801 4.072v5.718c0 2.014-.278 3.094-.801 4.072a5.452 5.452 0 0 1-2.268 2.268c-.978.523-2.058.801-4.072.801H11.14c-2.014 0-3.094-.278-4.072-.801a5.452 5.452 0 0 1-2.268-2.268C4.278 17.953 4 16.873 4 14.859V9.14c0-2.014.278-3.094.801-4.072A5.452 5.452 0 0 1 7.07 2.801C8.047 2.278 9.127 2 11.141 2zM11 6h2v5h-2V6z"
+            />
+          </svg>
+        </a>
+      </div>
     </header>
 
     <main class="main">
