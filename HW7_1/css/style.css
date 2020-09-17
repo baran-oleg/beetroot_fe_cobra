@@ -16,9 +16,11 @@
   box-sizing: border-box;
 }
 body {
+  min-height: 100vh;
   background-color: #fdde7e;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
 }
 .main {
   width: 1200px;
@@ -31,53 +33,48 @@ body {
 }
 .card {
   background-color: #ffffff;
-  width: 360px;
+  max-width: 361px;
+  width: 100%;
   min-height: 441px;
+  padding: 27px 0 36px;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-
+  border-radius: 3px;
   box-shadow: 0 31px 30px rgba(0, 0, 0, 0.34);
 }
-.card h1 {
+.card .price {
   font-family: Miso;
   font-size: 70px;
   color: #02995b;
-  padding-top: 27px;
-  margin-bottom: 13px;
-  letter-spacing: -1.25px;
 }
+
 .card img {
-  padding-left: 10px;
-  margin-bottom: 22px;
+  padding-left: 13px;
+  padding-bottom: 13px;
   min-width: 140px;
-  height: 134px;
+  min-height: 134px;
 }
 
 .card h2 {
   font-family: "Miso-light";
-  margin-bottom: 17px;
   font-size: 56px;
-  letter-spacing: 0.09px;
+  letter-spacing: 0.3px;
 }
 .card p {
   text-align: center;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.5px;
   font-size: 21px;
+  line-height: 26px;
 }
 
 .card:hover {
-  min-height: 500px;
-  transition: all 0.4s ease;
-}
-.card:hover h1 {
-  padding-top: 38px;
-  margin-bottom: 30px;
+  height: 500px;
+  padding: 37px 0 55px;
 }
 .card:hover img {
-  height: 134px;
-  margin-bottom: 34px;
+  flex-grow: 0.3;
 }
