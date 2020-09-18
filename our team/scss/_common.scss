@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container {
+  width: 1154px;
+  height: 836px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 159px;
+  width: 450px;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 2px;
+    background-color: $color1;
+    top: 157px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 2px;
+    background-color: $color1;
+    top: 157px;
+    right: 0;
+  }
+  &__subtitle {
+    font-family: $main_font;
+    font-size: $subtitle_size;
+    font-weight: 500;
+    color: $color4;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+  }
+  &__title {
+    font-family: $title_font;
+    font-size: $title_size;
+    font-weight: 700;
+    color: $color1;
+    text-transform: uppercase;
+  }
+  &__icon {
+    position: absolute;
+    top: 148px;
+    left: 218px;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 563px;
+
+  display: flex;
+}
+.section1 {
+  width: 576px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid $color1;
+    border-left: 2px solid $color1;
+    top: 275px;
+    left: 19px;
+    transform: rotate(318deg);
+  }
+  &__wrapper {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: $color1;
+      top: -14px;
+      left: -14px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 2px;
+      background-color: $color1;
+      top: -14px;
+      left: -14px;
+    }
+    &-img {
+      border: 1px solid $color1;
+      position: relative;
+    }
+  }
+  &__div1 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: $color1;
+      top: -212px;
+      left: -84px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 2px;
+      background-color: $color1;
+      top: -212px;
+      left: 14px;
+    }
+  }
+  &__div2 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: $color1;
+      top: 206px;
+      left: -404px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 2px;
+      background-color: $color1;
+      top: 108px;
+      left: -404px;
+    }
+  }
+  &__div3 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: $color1;
+      top: 206px;
+      left: -84px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 2px;
+      background-color: $color1;
+      top: 108px;
+      left: 14px;
+    }
+  }
+}
+
+.section2 {
+  width: 576px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  padding: 91px 0 75px;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 500px;
+    background-color: $color1;
+    top: 38px;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid $color1;
+    border-left: 2px solid $color1;
+    top: 275px;
+    left: 522px;
+    transform: rotate(137deg);
+  }
+  &__title {
+    font-family: $title_font;
+    font-size: $name_size;
+    font-weight: 700;
+    color: $color3;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      background-color: $color1;
+      top: 52px;
+      left: 68px;
+    }
+  }
+  &__subtitle {
+    font-family: $main_font;
+    font-size: $position_size;
+    font-weight: 400;
+    color: $color3;
+    line-height: 36px;
+  }
+  &__links {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid $color2;
+      border-radius: 50%;
+      text-decoration: none;
+      & i {
+        color: $color2;
+        text-align: center;
+      }
+    }
+  }
+  &__text {
+    width: 416px;
+    text-align: center;
+    font-family: $main_font;
+    font-size: $text_size;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color5;
+  }
+  &__empty {
+    width: 20px;
+    height: 4px;
+    background-color: $color1;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 4px;
+      background-color: $color1;
+      top: 0;
+      left: -16px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 4px;
+      background-color: $color1;
+      top: 0;
+      left: 26px;
+    }
+  }
+  &__button {
+    width: 120px;
+    height: 24px;
+    border: 1px solid $color1;
+    background-color: white;
+    color: $color3;
+    font-family: $bt_font;
+    font-size: $bt_size;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      color: $color5;
+      background-color: $color1;
+      border: 1px solid $color1;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  height: 67px;
+  &__bt {
+    width: 10px;
+    height: 10px;
+    background-color: $color1;
+    border: 1px solid $color1;
+    border-radius: 50%;
+    &:hover {
+      border: 1px solid $color1;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+}
