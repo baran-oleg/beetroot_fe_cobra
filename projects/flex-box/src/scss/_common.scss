@@ -41,7 +41,8 @@ body {
     &__wrapper {
       position: relative;
       width: 361px;
-      min-height: 250px;
+
+      padding-bottom: 69%;
       &-img {
         position: absolute;
         width: 100%;
