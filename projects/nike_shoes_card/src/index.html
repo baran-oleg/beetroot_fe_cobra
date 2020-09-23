@@ -22,12 +22,58 @@
             <div class="wrapper__content-img">
               <img src="./img/shoes.png" alt="" />
               <div class="wrapper__dot-section">
-                <span class="wrapper__dot wrapper__one"></span>
-                <span class="wrapper__dot wrapper__two"></span>
-                <span class="wrapper__dot wrapper__three"></span>
-                <span class="wrapper__dot wrapper__four"></span>
+                <label for="color1" class="color1">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="dark_blue"
+                    id="color1"
+                    form="card_form"
+                    checked
+                  />
+                  <div class="button">
+                    <span></span>
+                  </div>
+                </label>
+                <label for="color2" class="color2">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="dark_blue"
+                    id="color2"
+                    form="card_form"
+                  />
+                  <div class="button">
+                    <span></span>
+                  </div>
+                </label>
+                <label for="color3" class="color3">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="dark_blue"
+                    id="color3"
+                    form="card_form"
+                  />
+                  <div class="button">
+                    <span></span>
+                  </div>
+                </label>
+                <label for="color4" class="color4">
+                  <input
+                    type="radio"
+                    name="color"
+                    value="dark_blue"
+                    id="color4"
+                    form="card_form"
+                  />
+                  <div class="button">
+                    <span></span>
+                  </div>
+                </label>
               </div>
             </div>
+
             <div class="wrapper__content-options">
               <h1>Nike SB Stefan Janoski Max</h1>
               <h3>Unisex Skateboarding Shoe</h3>
@@ -91,7 +137,7 @@
                   fill="rgba(236,240,241,1)"
                 />
               </svg>
-              <form id="cart_form">
+              <form id="card_form">
                 <div class="wrapper__select">
                   <select name="size" id="size" form="card_form">
                     <option value="0">Size</option>
@@ -110,8 +156,10 @@
                     <option value="5">5</option>
                   </select>
                 </div>
+                <button class="button" form="card_form" type="submit">
+                  Add to cart
+                </button>
               </form>
-              <button class="button" form="card_form">Add to cart</button>
             </div>
           </div>
         </div>
