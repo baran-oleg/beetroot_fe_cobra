@@ -2,7 +2,7 @@ $style: "form";
 .#{$style} {
   display: flex;
   flex-direction: column;
-  // position: static;
+
   &__username,
   &__password {
     font-family: $main_font;
@@ -108,7 +108,6 @@ $style: "form";
     color: $laben_color;
   }
   &__button {
-    display: block;
     width: 261px;
     height: 42px;
     background-color: $bt_color;
@@ -116,7 +115,7 @@ $style: "form";
     font-size: $bt_size;
     font-weight: 700;
     color: $activ_link_color;
-    margin-bottom: 33px;
+
     &:hover {
       background-color: $text_decoration_color;
       transition: 0.2s ease;

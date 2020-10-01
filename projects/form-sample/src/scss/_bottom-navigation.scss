@@ -2,6 +2,7 @@ $style: "bottom-navigation";
 .#{$style} {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
   &__link {
     color: $bottom_link_color;
     font-family: $main_font;
