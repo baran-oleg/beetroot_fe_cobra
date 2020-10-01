@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Form Sample</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/fav/favicon.ico"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="container__wrapper">
-        <nav class="navigation">
-          <a href="#" class="navigation__link navigation__link--first"
-            >Sing in</a
-          >
-          <a href="#" class="navigation__link"> Join us </a>
-        </nav>
 
-        <form class="form" id="registration">
-          <label for="" class="form__username" for="username">Username</label>
-          <input
-            type="text"
-            id="username"
-            class="form__username-input"
-            form="registration"
-            pattern="[A-Za-z]{3,13}_[A-Za-z]{3,13}"
-          />
-          <span class="form__error form__error--first">Invalid username </span>
-          <label class="form__password" for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            class="form__password-input form__password-input--invalid"
-            form="registration"
-            pattern="[A-Za-z]{6,10}"
-          />
-          <span class="form__error form__error--second">Invalid password</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Form Sample</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <div class="form__style-checkbox-container">
-            <input
-              type="checkbox"
-              class="form__style-checkbox"
-              id="checkbox-singed-in"
-            />
-            <label for="checkbox-singed-in" class="form__style-checkbox-label"
-              >Keep me singed in</label
-            >
-          </div>
+<body>
+  <div class="container">
+    <div class="container__wrapper">
+      <nav class="navigation">
+        <a href="#" class="navigation__link navigation__link--first">Sing in</a>
+        <a href="#" class="navigation__link"> Join us </a>
+      </nav>
 
-          <button class="form__button">Sing in</button>
-        </form>
-        <nav class="bottom-navigation">
-          <a href="#" class="bottom-navigation__link">Forgot password</a>
-          <a href="#" class="bottom-navigation__link">Create an account</a>
-        </nav>
-      </div>
+      <form class="form" id="registration">
+        <label class="form__username" for="username">Username</label>
+        <input type="text" id="username" class="form__username-input" form="registration"
+          pattern="[A-Za-z]{3,13}_[A-Za-z]{3,13}" />
+        <span class="form__error form__error--first">Invalid username </span>
+        <label class="form__password" for="password">Password</label>
+        <input type="password" id="password" class="form__password-input form__password-input--invalid"
+          form="registration" pattern="[A-Za-z]{6,10}" />
+        <span class="form__error form__error--second">Invalid password</span>
+
+        <div class="form__style-checkbox-container">
+          <input type="checkbox" class="form__style-checkbox" id="checkbox-singed-in" />
+          <label for="checkbox-singed-in" class="form__style-checkbox-label">Keep me singed in</label>
+        </div>
+
+        <button type="submit" class="form__button" form="registration">Sing in</button>
+      </form>
+      <nav class="bottom-navigation">
+        <a href="#" class="bottom-navigation__link">Forgot password</a>
+        <a href="#" class="bottom-navigation__link">Create an account</a>
+      </nav>
     </div>
-    <script src="js/bundle.js"></script>
-  </body>
+  </div>
+  <script src="js/bundle.js"></script>
+</body>
+
 </html>

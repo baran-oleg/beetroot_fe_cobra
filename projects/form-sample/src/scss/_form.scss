@@ -17,6 +17,7 @@ $style: "form";
     width: 260px;
     border: 2px solid rgba(191, 185, 204, 0.54);
     background: transparent;
+    padding: 10px;
     &:hover {
       border: 2px solid $bt_color;
     }
