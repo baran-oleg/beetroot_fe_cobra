@@ -16,13 +16,14 @@
         <img src="./img/logo.png" alt="" />
       </div>
       <ul class="header__list">
-        <li class="header__items--margin"><a href="#" class="header__items-link">Home</a></li>
-        <li class="header__items--margin"><a href="#" class="header__items-link">About</a></li>
-        <li class="header__items--margin"><a href="#" class="header__items-link">Services</a></li>
-        <li class="header__items--margin"><a href="#" class="header__items-link">Gallery</a></li>
-        <li class="header__items--margin"><a href="#" class="header__items-link">Blog</a></li>
-        <li class="header__items"><a href="#" class="header__items-link">Contact</a></li>
+        <li class="header__items header__items--margin"><a href="#" class="header__items-link">Home</a></li>
+        <li class="header__items header__items--margin"><a href="#" class="header__items-link">About</a></li>
+        <li class="header__items header__items--margin"><a href="#" class="header__items-link">Services</a></li>
+        <li class="header__items header__items--margin"><a href="#" class="header__items-link">Gallery</a></li>
+        <li class="header__items header__items--margin"><a href="#" class="header__items-link">Blog</a></li>
+        <li class="header__items header__items"><a href="#" class="header__items-link">Contact</a></li>
       </ul>
+      <div class="header__burger"></div>
     </nav>
     <h1 class="header__title">Fresh Life</h1>
     <p class="header__text">
@@ -40,6 +41,137 @@
       </a>
     </div>
   </header>
+  <main class="container">
+    <section class="about">
+      <div class="about__img">
+        <img src="./img/img_2.png" alt="cup" class="about__img-cup">
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">About Us</h2>
+        <p class="about__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum.
+        </p>
+        <p class="about__text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+        </p>
+      </div>
+    </section>
+    <section class="services">
+      <ul class="services__list">
+        <li class="services__content services__content--margin">
+          <div class="services__content-text">
+            <p>Online Shopping</p>
+          </div>
+          <div class="services__content-icon">
+            <img src="./img/icon_1.png" alt="icon_1">
+          </div>
+        </li>
+        <li class="services__content services__content--margin">
+          <div class="services__content-text">
+            <p>Quality Product</p>
+          </div>
+          <div class="services__content-icon">
+            <img src="./img/icon_2.png" alt="icon_1">
+          </div>
+        </li>
+        <li class="services__content services__content--margin">
+          <div class="services__content-text">
+            <p>Domestic & International Delivery</p>
+          </div>
+          <div class="services__content-icon">
+            <img src="./img/icon_3.png" alt="icon_1">
+          </div>
+        </li>
+        <li class="services__content">
+          <div class="services__content-text">
+            <p>Well Organized</p>
+          </div>
+          <div class="services__content-icon">
+            <img src="./img/icon_4.png" alt="icon_1">
+          </div>
+        </li>
+      </ul>
+      <h2 class="services__title">Our Services</h2>
+    </section>
+    <section class="gallery">
+      <h2 class="gallery__title">Gallery</h2>
+      <p class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class="gallery__container">
+        <div class="gallery__container-first">
+          <img src="./img/img_flex1.png" alt="">
+        </div>
+        <div class="gallery__container-second">
+          <img src="./img/img_flex2.png" alt="">
+        </div>
+        <div class="gallery__container-third">
+          <img src="./img/img_flex3.png" alt="">
+        </div>
+        <div class="gallery__container-forth">
+          <img src="./img/img_flex4.png" alt="">
+        </div>
+        <div class="gallery__container-fifth">
+          <img src="./img/img_flex5.png" alt="">
+        </div>
+      </div>
+      <button class="gallery__button">View More</button>
+    </section>
+    <section class="subscribe">
+      <h2 class="subscribe__title">Subscribe To Us</h2>
+      <p class="subscribe__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+      <form id="subscribe">
+        <input type="email" class="subscribe__input" form="subscribe" placeholder="Your email address..." required>
+        <button type="submit" form="subscribe" class="subscribe__button">Subscribe</button>
+      </form>
+    </section>
+    <section class="blog">
+      <h2 class="blog__title">Blog</h2>
+      <p class="blog__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+      </p>
+      <div class="blog__container">
+        <div class="blog__items-first">
+          <div>
+            <span>20</span>
+            <span>nov</span>
+          </div>
+          <div>
+            <h4>Green Smoothies: Too Much of a Good Thing?</h4>
+            <p>By Auskteez - 2 hours ago</p>
+          </div>
+        </div>
+        <div class="blog__items-second">
+          <div>
+            <span>14</span>
+            <span>nov</span>
+          </div>
+          <div>
+            <h4>Growing Food and a "Thirst" for Innovation</h4>
+            <p>By Auskteez - 3 hours ago</p>
+          </div>
+        </div>
+        <div class="blog__items-third">
+          <div>
+            <span>10</span>
+            <span>nov</span>
+          </div>
+          <div>
+            <h4>Pesticides & Food: What You Need to Know</h4>
+            <p>By auskteez - 6 hours ago</p>
+          </div>
+        </div>
+      </div>
+      <button class="blog__button">VIEW MORE</button>
+    </section>
+    <section></section>
+  </main>
 </body>
 
 </html>
