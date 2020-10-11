@@ -106,6 +106,10 @@ $style: "header";
         &:hover .header__arrow {
             fill: red;
         }
+
+        &:hover .header__scroll {
+            animation: bounce 1s;
+        }
     }
 
     &__scroll {

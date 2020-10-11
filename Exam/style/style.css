@@ -10,6 +10,19 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth; }
 
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px); } }
 .header {
   width: 100%;
   height: 100vh;
@@ -90,6 +103,8 @@ body {
       color: red; }
     .header__link:hover .header__arrow {
       fill: red; }
+    .header__link:hover .header__scroll {
+      animation: bounce 1s; }
   .header__scroll {
     color: #ffffff; }
   .header__arrow {
