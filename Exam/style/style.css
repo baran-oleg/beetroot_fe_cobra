@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative; }
+  .header__title {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.9375rem; }
+  .header__text {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0.4262rem;
+    margin-bottom: 3.125rem; }
+  .header__form {
+    width: 650px;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ffffff;
+    margin-bottom: 7.5rem; }
+    .header__form-input {
+      height: 3.55rem;
+      padding-left: 8rem;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.175rem;
+      color: #999999;
+      flex-grow: 2;
+      border: none; }
+      .header__form-input:focus {
+        outline: none; }
+    .header__form-button {
+      background-color: #5474fd;
+      border: none;
+      width: 150px;
+      font-family: "Aleo", serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.0875rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem 0 2rem; }
+      .header__form-button-text {
+        color: #ffffff; }
+      .header__form-button-svg {
+        fill: #ffffff; }
+      .header__form-button:hover {
+        cursor: pointer; }
+  .header__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.175rem; }
+    .header__link:hover .header__scroll {
+      color: red; }
+    .header__link:hover .header__arrow {
+      fill: red; }
+  .header__scroll {
+    color: #ffffff; }
+  .header__arrow {
+    fill: #ffffff; }
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #5474fd;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center; }
+  .nav__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .nav__logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem; }
+  .nav__list {
+    width: 560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+  .nav__items {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Aleo", serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 4.4% 2.6% 3.4%; }
+    .nav__items:hover {
+      background-color: #000000; }
+
+.section1 {
+  width: 100%;
+  padding: 4rem 0;
+  background-image: url(../img/section1_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .section1__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+
+.col1 {
+  flex-basis: 400px;
+  margin-right: 2rem; }
+  .col1__title {
+    color: #ffffff;
+    font-family: "Aleo", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 3.875rem; }
+  .col1__text {
+    color: #e8e8e8;
+    text-align: justify;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.625rem; }
+    .col1__text--margin1 {
+      margin-bottom: 1.8rem; }
+    .col1__text--margin2 {
+      margin-bottom: 3rem; }
+  .col1__link a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    background-color: #5474fd;
+    padding: 5% 11.9%;
+    position: relative;
+    z-index: 3; }
+    .col1__link a::after {
+      content: url(../img/bt_img.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .col1__link a:hover {
+      background-color: blue; }
+
+.col2 {
+  flex-basis: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2; }
+  .col2__imgWrap {
+    width: 350px;
+    padding-bottom: 36.5%;
+    position: relative; }
+    .col2__imgWrap:nth-child(1) {
+      align-self: flex-start; }
+    .col2__imgWrap:nth-child(2) {
+      align-self: flex-end; }
+    .col2__imgWrap img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+
+.section2 {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/section2_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .section2__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end; }
+  .section2__block {
+    width: 540px;
+    background-color: rgba(35, 35, 35, 0.9);
+    padding: 1.5rem 1rem 2rem 1rem; }
+  .section2__subTitle {
+    color: #e8e8e8;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.0937rem;
+    margin-bottom: 1.875rem; }
+  .section2__title {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.8125rem; }
+  .section2__text {
+    color: #e8e8e8;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-align: justify;
+    margin-bottom: 3rem; }
+  .section2__link a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Aleo", serif;
+    font-size: 1rem;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    background-color: #5474fd;
+    padding: 4.4% 11.9%;
+    position: relative;
+    z-index: 3; }
+    .section2__link a::after {
+      content: url(../img/bt_img.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .section2__link a:hover {
+      background-color: blue; }
+
+.section3 {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/section3_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .section3__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end; }
+  .section3__block {
+    width: 540px;
+    background-color: rgba(35, 35, 35, 0.9);
+    padding: 1.5rem 1rem 2rem 1rem; }
+  .section3__subTitle {
+    color: #e8e8e8;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.0937rem;
+    margin-bottom: 1.875rem; }
+  .section3__title {
+    color: #fefefe;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.8125rem; }
+  .section3__text {
+    color: #e8e8e8;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-align: justify;
+    margin-bottom: 3rem; }
+  .section3__link a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Aleo", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    background-color: #5474fd;
+    padding: 4.4% 11.9%;
+    position: relative;
+    z-index: 3; }
+    .section3__link a::after {
+      content: url(../img/bt_img.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .section3__link a:hover {
+      background-color: blue; }
+
+.section4 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/section4_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .section4__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  .section4__title {
+    color: #ffffff;
+    font-family: "Aleo", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 5.875rem; }
+  .section4__block {
+    width: 1000px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row; }
+  .section4 .block__imgWrap {
+    width: 445px;
+    padding-bottom: 25.6%;
+    position: relative; }
+    .section4 .block__imgWrap img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  .section4 .block__content {
+    width: 665px;
+    padding: 20px; }
+  .section4 .content__title {
+    color: #fefefe;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 2.0625rem; }
+  .section4 .content__text {
+    color: #e8e8e8;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-align: justify; }
+
+.footer {
+  width: 100%;
+  height: 268px;
+  background-color: #232323;
+  padding-bottom: 3.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+  .footer__title {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.21rem;
+    margin-bottom: 0.9325rem; }
+  .footer__subTitle {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem; }
+  .footer__list {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none; }
+
+.icons {
+  width: 100%;
+  height: 337px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  scroll-behavior: smooth; }
+  .icons__container {
+    width: 100%;
+    max-width: 1124px;
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/border.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .icons__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 50%;
+    height: 112px; }
+    .icons__block svg {
+      margin-bottom: 1rem; }
+    .icons__block h3 {
+      font-family: "Aleo", serif;
+      color: #e8e8e8;
+      font-size: 2.25rem;
+      font-weight: 400; }

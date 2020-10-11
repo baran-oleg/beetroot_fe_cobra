@@ -1,0 +1,46 @@
+$style: "icons";
+
+.#{$style} {
+    width: 100%;
+    height: 337px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    scroll-behavior: smooth;
+
+    &__container {
+        width: 100%;
+        max-width: 1124px;
+        display: flex;
+        justify-content: space-between;
+        background: url(../img/border.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        border-radius: 50%;
+        height: 112px;
+
+        & svg {
+            margin-bottom: 1rem;
+        }
+
+        & h3 {
+            font-family: $secondFont;
+            color: #e8e8e8;
+            font-size: 2.25rem;
+            font-weight: 400;
+
+        }
+    }
+}
