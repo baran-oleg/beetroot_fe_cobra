@@ -445,6 +445,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none; }
+  .footer__items:nth-child(3) svg {
+    fill: #5474fd; }
+  .footer__items svg {
+    fill: white; }
+  .footer__items:hover svg {
+    fill: #5474fd; }
 
 .icons {
   width: 100%;

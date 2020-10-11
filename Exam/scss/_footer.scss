@@ -36,4 +36,20 @@ $style: "footer";
         justify-content: space-between;
         list-style: none;
     }
+
+    &__items {
+
+        &:nth-child(3) svg {
+            fill: rgba(84, 116, 253, 1);
+        }
+
+        & svg {
+            fill: rgba(255, 255, 255, 1);
+
+        }
+
+        &:hover svg {
+            fill: rgba(84, 116, 253, 1);
+        }
+    }
 }
