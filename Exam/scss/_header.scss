@@ -7,7 +7,7 @@ $style: "header";
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,14 +46,19 @@ $style: "header";
 
         &-input {
             height: 3.55rem;
-            padding-left: 8rem;
             font-family: $firstFont;
             font-size: $hederInput;
             font-weight: 400;
             letter-spacing: 0.175rem;
-            color: #999999;
+            color: #000000;
             flex-grow: 2;
+            padding-left: 1.5rem;
             border: none;
+
+            &::placeholder {
+                text-align: center;
+                color: #999999;
+            }
 
             &:focus {
                 outline: none;
@@ -84,6 +89,7 @@ $style: "header";
 
             &:hover {
                 cursor: pointer;
+                background-color: blue;
             }
         }
     }
@@ -100,11 +106,11 @@ $style: "header";
         letter-spacing: 0.175rem;
 
         &:hover .header__scroll {
-            color: red;
+            color: blue;
         }
 
         &:hover .header__arrow {
-            fill: red;
+            fill: blue;
         }
 
         &:hover .header__scroll {

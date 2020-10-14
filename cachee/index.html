@@ -136,42 +136,79 @@
       <p class="blog__text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
       </p>
-      <div class="blog__container">
-        <div class="blog__items-first">
-          <div>
-            <span>20</span>
-            <span>nov</span>
+      <ul class="blog__container">
+        <li class="blog__items">
+          <img src="./img/img_blog1.png" alt="">
+          <div class="blog__content">
+            <div>
+              <span>20</span>
+              <span>nov</span>
+            </div>
+            <div>
+              <h4>Green Smoothies: Too Much of a Good Thing?</h4>
+              <p>By Auskteez - 2 hours ago</p>
+            </div>
           </div>
-          <div>
-            <h4>Green Smoothies: Too Much of a Good Thing?</h4>
-            <p>By Auskteez - 2 hours ago</p>
+        </li>
+        <li class="blog__items">
+          <img src="./img/img_blog2.png" alt="">
+          <div class="blog__content">
+            <div>
+              <span>14</span>
+              <span>nov</span>
+            </div>
+            <div>
+              <h4>Growing Food and a "Thirst" for Innovation</h4>
+              <p>By Auskteez - 3 hours ago</p>
+            </div>
           </div>
-        </div>
-        <div class="blog__items-second">
-          <div>
-            <span>14</span>
-            <span>nov</span>
+        </li>
+        <li class="blog__items">
+          <img src="./img/img_blog3.png" alt="">
+          <div class="blog__content">
+            <div>
+              <span>10</span>
+              <span>nov</span>
+            </div>
+            <div>
+              <h4>Pesticides & Food: What You Need to Know</h4>
+              <p>By Auskteez - 6 hours ago</p>
+            </div>
           </div>
-          <div>
-            <h4>Growing Food and a "Thirst" for Innovation</h4>
-            <p>By Auskteez - 3 hours ago</p>
-          </div>
-        </div>
-        <div class="blog__items-third">
-          <div>
-            <span>10</span>
-            <span>nov</span>
-          </div>
-          <div>
-            <h4>Pesticides & Food: What You Need to Know</h4>
-            <p>By auskteez - 6 hours ago</p>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
       <button class="blog__button">VIEW MORE</button>
     </section>
-    <section></section>
+    <section class="contact">
+      <h2 class="contact__title">Contact</h2>
+      <p class="contact__text">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+      <div class="contact__container">
+
+        <form id="contact_form" class="contact__formWrap">
+          <input type="text" placeholder="Auskteez Tran" required form="contact_form">
+          <input type="email" placeholder="Your email..." required form="contact_form">
+          <input type="text" placeholder="Your phone number..." required form="contact_form">
+          <textarea cols="30" rows="10" placeholder="Your message"></textarea>
+        </form>
+
+        <dl class="contact__list">
+          <dt class="contact__itemsTitle">Address</dt>
+          <dd class="contact__itemsDescription">123 City name, street, City, Country</dd>
+          <dt class="contact__itemsTitle">Email</dt>
+          <dd class="contact__itemsDescription">cachee@domain.com</dd>
+          <dt class="contact__itemsTitle">Phone</dt>
+          <dd class="contact__itemsDescription">+012 345 6789</dd>
+        </dl>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__caption">© 2015 Company. All right reserved.</p>
+      <h3 class="footer__logo">Cahee</h3>
+      <p class="footer__text">Made with <span>love</span> by Auskteez</p>
+    </div>
+  </footer>
 </body>
 
 </html>

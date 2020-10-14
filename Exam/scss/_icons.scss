@@ -4,22 +4,35 @@ $style: "icons";
     width: 100%;
     height: 337px;
     background-color: #333333;
+
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    scroll-behavior: smooth;
+
+    position: relative;
+
+    &__line {
+        width: 100%;
+        max-width: 900px;
+        position: absolute;
+        top: 45px;
+        height: 111px;
+        background: url(../img/border.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
 
     &__container {
         width: 100%;
         max-width: 1124px;
         display: flex;
         justify-content: space-between;
-        background: url(../img/border.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        z-index: 3;
     }
 
     &__block {

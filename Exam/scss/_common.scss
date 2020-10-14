@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   font-size: 100%;
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 
 @keyframes bounce {

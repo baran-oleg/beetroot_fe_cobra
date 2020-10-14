@@ -2,6 +2,7 @@ $style: "nav";
 
 .#{$style} {
     width: 100%;
+    padding: 0 1.5rem;
     height: 80px;
     background-color: #5474fd;
     position: absolute;
@@ -49,7 +50,7 @@ $style: "nav";
         padding: 4.4% 2.6% 3.4%;
 
         &:hover {
-            background-color: #000000;
+            background-color: blue;
         }
     }
 }

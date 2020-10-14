@@ -2,13 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html,
 body {
   font-size: 100%;
-  min-height: 100vh;
-  scroll-behavior: smooth; }
+  min-height: 100vh; }
 
 @keyframes bounce {
   0%,
@@ -30,6 +30,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,14 +61,17 @@ body {
     margin-bottom: 7.5rem; }
     .header__form-input {
       height: 3.55rem;
-      padding-left: 8rem;
       font-family: "Josefin Sans", sans-serif;
       font-size: 0.875rem;
       font-weight: 400;
       letter-spacing: 0.175rem;
-      color: #999999;
+      color: #000000;
       flex-grow: 2;
+      padding-left: 1.5rem;
       border: none; }
+      .header__form-input::placeholder {
+        text-align: center;
+        color: #999999; }
       .header__form-input:focus {
         outline: none; }
     .header__form-button {
@@ -88,7 +92,8 @@ body {
       .header__form-button-svg {
         fill: #ffffff; }
       .header__form-button:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: blue; }
   .header__link {
     text-decoration: none;
     display: flex;
@@ -100,9 +105,9 @@ body {
     font-weight: 400;
     letter-spacing: 0.175rem; }
     .header__link:hover .header__scroll {
-      color: red; }
+      color: blue; }
     .header__link:hover .header__arrow {
-      fill: red; }
+      fill: blue; }
     .header__link:hover .header__scroll {
       animation: bounce 1s; }
   .header__scroll {
@@ -112,6 +117,7 @@ body {
 
 .nav {
   width: 100%;
+  padding: 0 1.5rem;
   height: 80px;
   background-color: #5474fd;
   position: absolute;
@@ -148,11 +154,11 @@ body {
     text-transform: uppercase;
     padding: 4.4% 2.6% 3.4%; }
     .nav__items:hover {
-      background-color: #000000; }
+      background-color: blue; }
 
 .section1 {
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 1.5rem;
   background-image: url(../img/section1_bg.png);
   background-position: center;
   background-size: cover;
@@ -167,7 +173,7 @@ body {
     max-width: 1124px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center; }
 
@@ -202,7 +208,7 @@ body {
     padding: 5% 11.9%;
     position: relative;
     z-index: 3; }
-    .col1__link a::after {
+    .col1__link a::before {
       content: url(../img/bt_img.png);
       position: absolute;
       top: 0;
@@ -214,14 +220,14 @@ body {
 .col2 {
   flex-basis: 600px;
   display: flex;
-  flex-direction: column;
-  z-index: 2; }
+  flex-direction: column; }
   .col2__imgWrap {
     width: 350px;
     padding-bottom: 36.5%;
     position: relative; }
     .col2__imgWrap:nth-child(1) {
-      align-self: flex-start; }
+      align-self: flex-start;
+      margin-bottom: 5px; }
     .col2__imgWrap:nth-child(2) {
       align-self: flex-end; }
     .col2__imgWrap img {
@@ -460,8 +466,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none; }
-  .footer__items:nth-child(3) svg {
-    fill: #5474fd; }
   .footer__items svg {
     fill: white; }
   .footer__items:hover svg {
@@ -472,20 +476,28 @@ body {
   height: 337px;
   background-color: #333333;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  scroll-behavior: smooth; }
+  position: relative; }
+  .icons__line {
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+    top: 45px;
+    height: 111px;
+    background: url(../img/border.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0; }
   .icons__container {
     width: 100%;
     max-width: 1124px;
     display: flex;
     justify-content: space-between;
-    background: url(../img/border.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; }
+    z-index: 3; }
   .icons__block {
     display: flex;
     flex-direction: column;

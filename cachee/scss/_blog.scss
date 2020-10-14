@@ -1,4 +1,5 @@
 $style: "blog";
+
 .#{$style} {
   width: 100%;
   background-color: $color14;
@@ -8,6 +9,8 @@ $style: "blog";
   align-items: center;
   align-content: center;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+
   &__title {
     font-family: $main_font;
     color: $color1;
@@ -15,6 +18,7 @@ $style: "blog";
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
+
   &__text {
     width: 563px;
     font-family: $main_font;
@@ -23,102 +27,104 @@ $style: "blog";
     font-weight: 300;
     text-align: justify;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
+
   &__container {
-    height: 310px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+    margin-bottom: 50px;
   }
+
   &__items {
-    &-first {
-      grid-area: 1 / 1 / 2 / 2;
-      background-image: url(../img/img_blog1.png);
-      padding: 1rem 0 0 1rem;
-      & > div:nth-child(1) {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(38, 38, 38, 0.5);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        & span:nth-child(1) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 2rem;
-          font-weight: 700;
-        }
-        & span:nth-child(2) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 1.3125rem;
-          font-weight: 700;
-        }
+    width: 370px;
+    position: relative;
+    padding-bottom: 27.9%;
+    margin-right: 30px;
+
+    &::after {
+      content: "";
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 3;
+
+    padding: 30px 43px 23px 30px;
+
+    &>div:nth-child(1) {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(38, 38, 38, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 8px;
+      border-radius: 5px;
+      margin-bottom: 119px;
+
+      &>span:nth-child(1) {
+        color: $color1;
+        font-family: $main_font;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      &>span:nth-child(2) {
+        color: $color1;
+        font-family: $main_font;
+        font-size: 1.3125rem;
+        font-weight: 700;
+        text-transform: uppercase;
       }
     }
-    &-second {
-      grid-area: 1 / 2 / 2 / 3;
-      background-image: url(../img/img_blog2.png);
-      padding: 1rem 0 0 1rem;
-      & > div:nth-child(1) {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(38, 38, 38, 0.5);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        & span:nth-child(1) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 2rem;
-          font-weight: 700;
-        }
-        & span:nth-child(2) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 1.3125rem;
-          font-weight: 700;
-        }
+
+    &>div:nth-child(2) {
+      & h4 {
+        color: $color1;
+        font-family: $main_font;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
       }
-    }
-    &-third {
-      grid-area: 1 / 3 / 2 / 4;
-      background-image: url(../img/img_blog3.png);
-      padding: 1rem 0 0 1rem;
-      & > div:nth-child(1) {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(38, 38, 38, 0.5);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        & span:nth-child(1) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 2rem;
-          font-weight: 700;
-        }
-        & span:nth-child(2) {
-          color: $color1;
-          font-family: $main_font;
-          font-size: 1.3125rem;
-          font-weight: 700;
-        }
+
+      & p {
+        color: $color1;
+        font-family: $main_font;
+        font-size: 0.8125rem;
       }
     }
   }
+
   &__button {
     width: 200px;
     height: 55px;
