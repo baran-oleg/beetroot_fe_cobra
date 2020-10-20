@@ -1,0 +1,74 @@
+$style: "tasty";
+
+.#{$style} {
+    width: 100%;
+    padding: 123px 102px 211px 136px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/img/Shape.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        flex-basis: 464px;
+        position: relative;
+        padding-bottom: 32%;
+        margin-right: 166px;
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__content {
+        flex-basis: 575px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 3.6562rem;
+        font-weight: 700;
+        color: #ff7f7f;
+        text-transform: uppercase;
+        margin-bottom: 59px;
+    }
+
+    &__text {
+        font-family: $main_font;
+        font-size: 1.8437rem;
+        font-weight: 400;
+        color: #ff7f7f;
+        margin-bottom: 73px;
+    }
+
+    &__link {
+        display: inline-flex;
+        width: 322px;
+        height: 65px;
+        background-color: #ff7f7f;
+        border-radius: 32.5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-family: $main_font;
+        font-size: 1.5625rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+}

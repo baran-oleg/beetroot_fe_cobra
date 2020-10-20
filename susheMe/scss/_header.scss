@@ -1,0 +1,34 @@
+$style: "header";
+
+.#{$style} {
+    width: 100%;
+    background-color: rgba(255, 127, 127, 0.75);
+
+    padding: 1rem 3.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    z-index: 10;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__items {
+        margin-right: 2rem;
+        font-family: $main_font;
+        font-weight: 600;
+        font-size: 1.5625rem;
+        color: #ffffff;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

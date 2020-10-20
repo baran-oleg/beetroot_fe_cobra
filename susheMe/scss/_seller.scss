@@ -1,0 +1,96 @@
+$style: "seller";
+
+.#{$style} {
+    padding: 197px 1rem 28px;
+    background-color: #ff7f7f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    &__container {
+        display: inline-flex;
+        width: 700px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 3.6562rem;
+        font-weight: 700;
+        line-height: 3.8rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-family: $main_font;
+        font-size: 1.5652rem;
+        line-height: 1.7rem;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 84px;
+        text-align: center;
+    }
+
+    &__svg {
+        width: 205px;
+        height: 205px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__items {
+        flex-basis: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-right: 165px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__wrap {
+        margin-bottom: 43px;
+    }
+
+    &__sub-title {
+        font-family: $main_font;
+        font-size: 1.75rem;
+        line-height: 1.8rem;
+        color: #ffffff;
+        margin-bottom: 27px;
+    }
+
+    &__sub-text {
+        font-family: $main_font;
+        font-size: 1.0625rem;
+        line-height: 1.8rem;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__svg4 {
+        position: absolute;
+        top: 484px;
+        left: 0;
+    }
+
+    &__svg5 {
+        position: absolute;
+        top: 394px;
+        right: 145px;
+    }
+}
