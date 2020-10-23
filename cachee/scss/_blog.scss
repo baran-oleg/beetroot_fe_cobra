@@ -1,140 +1,166 @@
 $style: "blog";
 
 .#{$style} {
-  width: 100%;
-  background-color: $color14;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-
-  &__title {
-    font-family: $main_font;
-    color: $color1;
-    font-size: 5.625rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-  }
-
-  &__text {
-    width: 563px;
-    font-family: $main_font;
-    color: $color1;
-    font-size: 1.0625rem;
-    font-weight: 300;
-    text-align: justify;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  &__container {
+    width: 100%;
+    background-color: $color14;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 3rem 2rem;
 
-    list-style: none;
-    margin-bottom: 50px;
-  }
-
-  &__items {
-    width: 370px;
-    position: relative;
-    padding-bottom: 27.9%;
-    margin-right: 30px;
-
-    &::after {
-      content: "";
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1));
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    &:nth-child(3) {
-      margin-right: 0;
-    }
-
-    & img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      object-fit: cover;
-    }
-
-  }
-
-  &__content {
-    position: absolute;
-    z-index: 3;
-
-    padding: 30px 43px 23px 30px;
-
-    &>div:nth-child(1) {
-      width: 60px;
-      height: 60px;
-      background-color: rgba(38, 38, 38, 0.5);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      padding-bottom: 8px;
-      border-radius: 5px;
-      margin-bottom: 119px;
-
-      &>span:nth-child(1) {
-        color: $color1;
+    &__title {
         font-family: $main_font;
-        font-size: 2rem;
-        font-weight: 700;
-      }
-
-      &>span:nth-child(2) {
         color: $color1;
-        font-family: $main_font;
-        font-size: 1.3125rem;
+        font-size: 5.625rem;
         font-weight: 700;
-        text-transform: uppercase;
-      }
+        margin-bottom: 1.5rem;
     }
 
-    &>div:nth-child(2) {
-      & h4 {
+    &__text {
+        width: 563px;
+        font-family: $main_font;
+        color: $color1;
+        font-size: 1.0625rem;
+        font-weight: 300;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-bottom: 50px;
+        gap: 30px;
+
+    }
+
+    &__items {
+        flex-basis: 370px;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+
+        }
+
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: cover;
+        }
+
+    }
+
+    &__img-wrap {
+        position: relative;
+        width: 370px;
+        padding-bottom: 84%;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        padding: 30px 43px 23px 30px;
+
+        &>div:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(38, 38, 38, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding-bottom: 8px;
+            border-radius: 5px;
+            margin-bottom: 119px;
+
+            &>span:nth-child(1) {
+                color: $color1;
+                font-family: $main_font;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            &>span:nth-child(2) {
+                color: $color1;
+                font-family: $main_font;
+                font-size: 1.3125rem;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        &>div:nth-child(2) {
+            & h4 {
+                color: $color1;
+                font-family: $main_font;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            & p {
+                color: $color1;
+                font-family: $main_font;
+                font-size: 0.8125rem;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-decoration: none;
+        width: 200px;
+        height: 55px;
+        background-color: $color8;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border: none;
         color: $color1;
         font-family: $main_font;
         font-size: 1.25rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
+        font-weight: 300;
+        text-transform: uppercase;
 
-      & p {
-        color: $color1;
-        font-family: $main_font;
-        font-size: 0.8125rem;
-      }
+        &:hover {
+            color: $color8;
+            border: 2px solid $color8;
+            background-color: $color1;
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
     }
-  }
-
-  &__button {
-    width: 200px;
-    height: 55px;
-    background-color: $color8;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    border: none;
-    color: $color1;
-    font-family: $main_font;
-    font-size: 1.25rem;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
 }

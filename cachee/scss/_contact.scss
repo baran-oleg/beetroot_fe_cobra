@@ -30,17 +30,26 @@ $style: "contact";
     }
 
     &__container {
+        width: 100%;
+        max-width: 1300px;
+        flex-basis: 500px;
         display: flex;
         flex-direction: row;
-        width: 1124px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 60px;
+
 
     }
 
     &__formWrap {
-
-        margin-right: 170px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
 
         & input {
             width: 500px;
@@ -68,7 +77,8 @@ $style: "contact";
         }
 
         & textarea {
-            background-color: rgba(0, 196, 196, 0.5);
+            width: 500px;
+
             background-color: rgba(0, 196, 196, 0.5);
             border: none;
             outline: none;
@@ -77,6 +87,7 @@ $style: "contact";
             color: $color1;
             font-family: $main_font;
             font-size: 0.9375rem;
+            margin-bottom: 15px;
 
             &:focus {
                 border-left: 3px solid rgb(53, 91, 130);
@@ -90,9 +101,42 @@ $style: "contact";
                 color: $color1;
             }
         }
+
     }
 
+    &__submit {
 
+        display: inline-flex;
+        width: 170px;
+        height: 55px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 196, 196, 0.5);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid rgba(0, 196, 196, 0.5);
+
+        font-family: $main_font;
+        font-size: 1.25rem;
+        color: $color1;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(0, 196, 196);
+            border: 2px solid rgb(0, 196, 196);
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+    }
+
+    &__list {
+        flex-basis: 300px;
+
+        @media screen and (max-width: 923px) {
+            flex-basis: 319px;
+        }
+    }
 
     &__itemsTitle {
         font-family: $main_font;
@@ -100,6 +144,10 @@ $style: "contact";
         color: $color2;
         font-weight: 700;
         text-transform: uppercase;
+
+        @media screen and (max-width: 923px) {
+            text-align: center;
+        }
     }
 
     &__itemsDescription {

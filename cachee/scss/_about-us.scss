@@ -1,0 +1,128 @@
+$style: "about-us";
+
+.#{$style} {
+    width: 100%;
+    background-color: $color3;
+    padding: 71px 2rem 70px;
+
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 100%;
+        max-width: 1300px;
+
+        @media screen and (min-width: 578px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
+
+    }
+
+    &__img-wrap {
+        flex-basis: 566px;
+        position: relative;
+
+        padding-bottom: 46.6%;
+
+        @media screen and (min-width: 578px) {
+            flex-basis: 300px;
+            width: 300px;
+
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 400px;
+            position: relative;
+
+            padding-bottom: 46.6%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 566px;
+            position: relative;
+
+            padding-bottom: 46.6%;
+        }
+
+        & img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+
+        @media screen and (min-width: 578px) {
+            flex-basis: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 5.625rem;
+        color: $color1;
+        font-weight: 700;
+        margin-bottom: 34px;
+
+        @media screen and (min-width: 578px) {
+            text-align: center;
+            font-size: 4.725rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 4.725rem;
+        }
+    }
+
+    &__text {
+        font-family: $main_font;
+        font-size: 1.0625rem;
+        color: $color1;
+        line-height: 27px;
+        margin-bottom: 15px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

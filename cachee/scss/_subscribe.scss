@@ -1,48 +1,117 @@
 $style: "subscribe";
+
 .#{$style} {
-  width: 100%;
-  height: 500px;
-  background: url(../img/img_4.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 6rem 0 0 5rem;
-  &__title {
-    font-family: $main_font;
-    color: $color2;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  &__text {
-    width: 541px;
-    font-family: $main_font;
-    color: $color2;
-    font-size: 1.0625rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-  }
-  &__input {
-    width: 570px;
-    height: 55px;
-    border: 1px solid $color2;
-    padding-left: 1rem;
-    margin-right: 1.5rem;
-  }
-  &__button {
-    width: 170px;
-    height: 55px;
-    background-color: $color13;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    color: $color1;
-    font-family: $main_font;
-    font-size: 1.25rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    border: none;
-    &:hover {
-      background-color: $color2;
-      cursor: pointer;
+    width: 100%;
+    padding: 145px 2rem 163px;
+    background-image: url(../img/img_4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    &__container {
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: column;
+
     }
-  }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 2.5rem;
+        color: $color2;
+        font-weight: 700;
+        margin-bottom: 34px;
+    }
+
+    &__text {
+        width: 541px;
+        font-family: $main_font;
+        font-size: 1.0625rem;
+        color: $color2;
+        text-align: left;
+        line-height: 1.6875rem;
+        margin-bottom: 31px;
+    }
+
+    &__form {
+
+        @media screen and (min-width: 578px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__input {
+        height: 55px;
+        border: 1px solid $color2;
+        margin-right: 30px;
+        padding-left: 15px;
+        font-family: $main_font;
+        font-size: 1rem;
+        color: $color2;
+
+        @media screen and (min-width: 578px) {
+            margin-bottom: 30px;
+            width: 521px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 570px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 570px;
+        }
+
+        &::placeholder {
+
+            font-family: $main_font;
+            font-size: 0.9375rem;
+            color: $color2;
+            opacity: 0.5;
+        }
+    }
+
+    &__btn {
+        display: inline-flex;
+        width: 170px;
+        height: 55px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        background-color: $color13;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid $color13;
+
+        font-family: $main_font;
+        font-size: 1.25rem;
+        color: $color1;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            color: $color13;
+            background-color: $color1;
+            border: 2px solid $color13;
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+    }
+
 }

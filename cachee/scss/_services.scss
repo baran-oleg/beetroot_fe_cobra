@@ -1,102 +1,136 @@
 $style: "services";
+
 .#{$style} {
-  width: 100%;
-  height: 800px;
-  background: url(../img/servises.png);
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2rem 2.77rem;
+    width: 100%;
+    padding: 71px 2rem 70px;
+    background-image: url(../img/services_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  @media screen and (max-width: 767px) {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
     align-content: center;
-    align-items: center;
-  }
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    @media screen and (max-width: 767px) {
-      margin-right: 0;
+
+    &__container {
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+
+        @media screen and (min-width: 578px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
     }
-    @media screen and (min-width: 768px) {
-      margin-right: 3rem;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-right: 7rem;
-    }
-  }
-  &__content {
-    width: 400px;
-    height: 100px;
-    background-color: $color1;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    &--margin {
-      margin-bottom: 20px;
-    }
-    &-text {
-      flex-basis: 80%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      & > p {
+
+    &__title {
         font-family: $main_font;
-        color: $color2;
-        font-size: 1.25rem;
+        font-size: 5.625rem;
+        color: $color1;
         font-weight: 700;
-        text-align: center;
-      }
-    }
-    &-icon {
-      flex-basis: 20%;
-      height: 100px;
-      border-left: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    &:hover {
-      cursor: pointer;
-    }
-    &:hover &-icon {
-      background-color: $color7;
-    }
-  }
 
-  &__title {
-    font-family: $main_font;
-    color: $color1;
-    font-weight: 700;
-    @media screen and (max-width: 767px) {
-      font-size: 3.8rem;
-      margin-bottom: 2rem;
+        @media screen and (min-width: 578px) {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 365px;
+            font-size: 3.8752rem;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 544px;
+            font-size: 5.625rem;
+        }
     }
-    @media screen and (min-width: 768px) {
-      font-size: 4rem;
+
+    &__list {
+        list-style: none;
+
+        @media screen and (min-width: 578px) {
+            width: 400px;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 300px;
+            margin-right: 50px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 430px;
+            margin-right: 100px;
+        }
     }
-    @media screen and (min-width: 1280px) {
-      font-size: 5.625rem;
+
+    &__item {
+        display: inline-flex;
+        width: 400px;
+        height: 100px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        background-color: $color1;
+        margin-bottom: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.8s ease;
+        }
+
+        &:hover a> :nth-child(2)>svg {
+            fill: $color7;
+        }
+
+        & a {
+            display: inline-flex;
+            width: 400px;
+            text-decoration: none;
+        }
+
+        & a> :nth-child(1) {
+            flex-basis: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            font-family: $main_font;
+            font-size: 1.25rem;
+            color: $color2;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        & a> :nth-child(2) {
+            flex-basis: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border-left: 1px solid $color4;
+        }
+
+        & a> :nth-child(2)>svg {
+            fill: #000000;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
-  }
 }
