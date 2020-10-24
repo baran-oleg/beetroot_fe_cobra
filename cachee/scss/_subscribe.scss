@@ -37,11 +37,15 @@ $style: "subscribe";
         text-align: left;
         line-height: 1.6875rem;
         margin-bottom: 31px;
+
+        @media screen and (max-width: 767px) {
+            width: 443px;
+        }
     }
 
     &__form {
 
-        @media screen and (min-width: 578px) {
+        @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: column;
         }
@@ -66,9 +70,9 @@ $style: "subscribe";
         font-size: 1rem;
         color: $color2;
 
-        @media screen and (min-width: 578px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
-            width: 521px;
+            width: 425px;
         }
 
         @media screen and (min-width: 768px) {

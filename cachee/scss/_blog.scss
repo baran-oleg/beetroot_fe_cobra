@@ -27,6 +27,10 @@ $style: "blog";
         text-align: justify;
         margin-bottom: 1.5rem;
         text-align: center;
+
+        @media screen and (max-width: 767px) {
+            width: 430px;
+        }
     }
 
     &__container {

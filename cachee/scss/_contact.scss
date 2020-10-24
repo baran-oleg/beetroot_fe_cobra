@@ -63,6 +63,10 @@ $style: "contact";
             font-family: $main_font;
             font-size: 0.9375rem;
 
+            @media screen and (max-width: 767px) {
+                width: 450px;
+            }
+
             &:focus {
                 border-left: 3px solid rgb(53, 91, 130);
                 border-top: none;
@@ -88,6 +92,10 @@ $style: "contact";
             font-family: $main_font;
             font-size: 0.9375rem;
             margin-bottom: 15px;
+
+            @media screen and (max-width: 767px) {
+                width: 450px;
+            }
 
             &:focus {
                 border-left: 3px solid rgb(53, 91, 130);

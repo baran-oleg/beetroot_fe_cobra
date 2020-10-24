@@ -43,7 +43,7 @@ $style: "header";
     width: 100%;
     max-width: 1300px;
 
-    @media screen and (min-width: 578px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -88,7 +88,7 @@ $style: "header";
         flex-direction: row;
         justify-content: space-between;
 
-        @media screen and (min-width: 578px) {
+        @media screen and (max-width: 767px) {
             visibility: hidden;
         }
 
@@ -129,7 +129,7 @@ $style: "header";
     }
 
     &__burger {
-        @media screen and (min-width: 578px) {
+        @media screen and (max-width: 767px) {
             width: 30px;
             height: 30px;
             position: relative;
@@ -165,7 +165,7 @@ $style: "header";
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (min-width: 578px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
