@@ -93,7 +93,7 @@ $style: "header";
         justify-content: space-between;
 
         @media screen and (max-width: 767px) {
-            visibility: hidden;
+            display: none;
         }
 
         @media screen and (min-width: 768px) {
