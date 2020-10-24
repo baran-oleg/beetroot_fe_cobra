@@ -13,6 +13,10 @@ $style: "services";
     align-items: center;
     align-content: center;
 
+    @media screen and (max-width: 767px) {
+        padding: 1rem;
+    }
+
     &__container {
         width: 100%;
         max-width: 1300px;
@@ -49,6 +53,7 @@ $style: "services";
         @media screen and (max-width: 767px) {
             font-size: 4rem;
             margin-bottom: 3rem;
+            text-align: center;
         }
 
         @media screen and (min-width: 768px) {
@@ -66,7 +71,7 @@ $style: "services";
         list-style: none;
 
         @media screen and (max-width: 767px) {
-            width: 400px;
+            width: 343px;
         }
 
         @media screen and (min-width: 768px) {
@@ -88,6 +93,10 @@ $style: "services";
         background-color: $color1;
         margin-bottom: 20px;
 
+        @media screen and (max-width: 767px) {
+            width: 343px;
+        }
+
         &:hover {
             transform: scale(1.1);
             transition: all 0.8s ease;
@@ -101,6 +110,10 @@ $style: "services";
             display: inline-flex;
             width: 400px;
             text-decoration: none;
+
+            @media screen and (max-width: 767px) {
+                width: 343px;
+            }
         }
 
         & a> :nth-child(1) {
@@ -114,6 +127,7 @@ $style: "services";
             color: $color2;
             text-align: center;
             font-weight: 700;
+
         }
 
         & a> :nth-child(2) {

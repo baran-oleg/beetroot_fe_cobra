@@ -10,6 +10,10 @@ $style: "blog";
     align-content: center;
     padding: 3rem 2rem;
 
+    @media screen and (max-width: 767px) {
+        padding: 1rem;
+    }
+
     &__title {
         font-family: $main_font;
         color: $color1;
@@ -29,7 +33,7 @@ $style: "blog";
         text-align: center;
 
         @media screen and (max-width: 767px) {
-            width: 430px;
+            width: 358px;
         }
     }
 
@@ -49,7 +53,7 @@ $style: "blog";
     }
 
     &__items {
-        flex-basis: 370px;
+        flex-basis: 350px;
         position: relative;
 
         &::after {

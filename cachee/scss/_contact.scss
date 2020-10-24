@@ -14,6 +14,10 @@ $style: "contact";
 
     padding: 110px 2rem 120px;
 
+    @media screen and (max-width: 767px) {
+        padding: 1rem;
+    }
+
     &__title {
         color: $color2;
         font-family: $main_font;
@@ -64,7 +68,7 @@ $style: "contact";
             font-size: 0.9375rem;
 
             @media screen and (max-width: 767px) {
-                width: 450px;
+                width: 350px;
             }
 
             &:focus {
@@ -94,7 +98,7 @@ $style: "contact";
             margin-bottom: 15px;
 
             @media screen and (max-width: 767px) {
-                width: 450px;
+                width: 350px;
             }
 
             &:focus {
