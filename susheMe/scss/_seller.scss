@@ -12,7 +12,7 @@ $style: "seller";
 
     &__container {
         display: inline-flex;
-        width: 700px;
+        width: 632px;
         flex-direction: column;
         align-items: center;
     }
@@ -44,8 +44,9 @@ $style: "seller";
 
     &__list {
         list-style: none;
-        display: flex;
-        justify-content: center;
+        display: inline-flex;
+        width: 800px;
+        justify-content: space-between;
     }
 
     &__items {
@@ -55,11 +56,7 @@ $style: "seller";
         align-items: center;
         align-content: center;
         justify-content: center;
-        margin-right: 165px;
 
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
     &__wrap {

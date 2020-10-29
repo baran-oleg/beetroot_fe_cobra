@@ -1,0 +1,81 @@
+$style: "delicious";
+
+.#{$style} {
+    padding: 8rem 4rem;
+    background-color: #ffffff;
+    position: relative;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__content {
+        flex-basis: 612px;
+    }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 3.625rem;
+        color: #ff7f7f;
+        text-transform: uppercase;
+        margin-bottom: 59px;
+    }
+
+    &__text {
+        width: 573px;
+        font-family: $main_font;
+        font-size: 1.875rem;
+        color: #ff7f7f;
+        font-weight: 400;
+        margin-bottom: 70px;
+    }
+
+    &__link {
+        display: inline-flex;
+        width: 322px;
+        height: 65px;
+        background-color: #ff7f7f;
+        border-radius: 32.5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-family: $main_font;
+        font-size: 1.5625rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+    &__img {
+        flex-basis: 465px;
+    }
+
+    &__svg-1 {
+        position: absolute;
+        top: -57px;
+        left: 745px;
+    }
+
+    &__svg-2 {
+        position: absolute;
+        bottom: 73px;
+        right: 559px;
+    }
+
+    &__svg-3 {
+        position: absolute;
+        top: 20px;
+        left: 64px;
+    }
+
+    &__svg-4 {
+        position: absolute;
+        top: 74px;
+        right: 30px;
+    }
+}

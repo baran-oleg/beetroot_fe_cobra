@@ -1,0 +1,86 @@
+$style: "subscribe";
+
+.#{$style} {
+    padding: 9rem 3rem 10rem;
+    width: 100%;
+    background-image: url(../assets/img/Shape-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &__container {
+        display: inline-flex;
+        width: 870px;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: $main_font;
+        font-size: 3.625rem;
+        color: #ff7f7f;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        font-family: $main_font;
+        font-size: 1.875rem;
+        color: #ff7f7f;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__form {
+        width: 770px;
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-self: center;
+
+    }
+
+    &__input {
+        flex-grow: 2;
+        border: none;
+        border-radius: 32px 31px 31px;
+        background-color: #f4f4f4;
+        padding: 0 170px 0 20px;
+
+    }
+
+    &__btn {
+        width: 222px;
+        height: 65px;
+        border-radius: 33px;
+        background-color: #ff7f7f;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 627px;
+    }
+
+    &__svg-1 {
+        position: absolute;
+        bottom: 20px;
+        left: 410px;
+    }
+
+    &__svg-2 {
+        position: absolute;
+        top: 42px;
+        left: 30px;
+    }
+
+    &__svg-3 {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+
+}
